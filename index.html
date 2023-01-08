@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuka's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/f859ba5ea8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!------------HEADER SECTION------------------->
+  <section id="header">
+    <div class="nav container ">
+        <nav id="nav" class="">
+            <a href="#"><img src="./images/Logo (smoky).png" class="logo" alt=""></a>
+            <div class="ul-container">
+              <ul id="nav-item--container">
+                <li class="nav-item"><a href="#header" class="nav-item-link scroll">Home</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-item-link scroll pf">Projects</a></li>
+                <li class="nav-item"><a href="#about" class="nav-item-link scroll">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-item-link scroll">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+              </ul>
+            </div>
+          <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
+        </nav>
+      <div class="header-text-container">
+        <h1 class="header-text">Hello! I'm <span>Chuka </span></h1>
+        <p class="role">FRONT-END WEB DEVELOPER</p>
+        
+      </div>
+    </div>
+  </section>
+  <!------------PORTFOLIO SECTION---------------->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Projects</h1>
+      <div class="project-list">
+        <div class="project">
+          <img src="./images/project - social media.jpg" class="project-img" alt="">
+          <div class="project-desc">
+            <h3>Social Media App</h3>
+            <p>Site under construction</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+        <div class="project">
+          <img src="./images/project- music player.jpg" class="project-img" alt="">
+          <div class="project-desc">
+            <h3>Music player App</h3>
+            <p>Site under construction</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/project- eCommerce .jpg" class="project-img" alt="">
+          <div class="project-desc">
+            <h3>Shopping cart</h3>
+            <p>Site under construction</p>
+            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a> </div>
+        </div>
+      </div>
+      <a href="https://github.com/Siimple-c" class="btn" target="blank">See more</a>
+    </div>
+  </section>
+  <!------------ABOUT SECTION------------------->
+  <section id="about">
+    <div class="about-container container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/Portfolio img02.jpg" class="user-image"alt="user image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About me</h1>
+          <p class="subtitle-content">I am a self-taught developer and a life-long learner who is passionate about using my skills to bring ideas to life and create functional, intuitive and engaging expereinces for users. I appreciate diversity, constructive feedback and enjoy collaborating within a team to solve problems. In addition, I am also able to work independently and take ownership of my responsibilities.</p>
+          <div class="tabs-container">
+            <p class="tab" onclick="openTab('skills')">My Stack / Skills </p>            
+          </div>
+          <div class="tab-contents" id="skills">
+            <ul>
+              <li><i class="fa-brands fa-js"></i><span> Javascript</span></li>
+              <li><i class="fa-brands fa-sass"></i><span>Sass & Css3 </span></li>
+              <li><i class="fa-brands fa-git"></i><span>Git</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------CONTACT SECTION------------------->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane" id="contact-icon"></i>chuka.odunna@outlook.com </p>
+          <p><i class="fa-solid fa-phone" id="contact-icon"></i>+2348125470663</p>
+          <div class="social-icons">
+            <a href="https://twitter.com/knowcode_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/siimple_c/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tinyurl.com/chuka-linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="https://drive.google.com/file/d/18JiFm8V2LSvW_0HbVO6U5VvZdDse3n9a/view?usp=sharing" target="blank" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form action="9099dab7693dbc220d688c4e2643ef28">
+            <input type="text" name="Name" id="name" placeholder="Your Name" required>
+            <input type="Email" name="Email" id="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" id="msg" placeholder="Your message"></textarea>
+            <p class="success-msg">Successfully sent!</p>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright">
+      <p><i class="fa-regular fa-copyright"></i>Copyright Chuka <span id="date"> </span>. All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </section>
+</body>
+</html>

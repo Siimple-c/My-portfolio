@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+/* Root adjustment on font size changes font-size
+to a (1rem = 10px) based system.  et body to 1.6rem*/
+:root{
+  font-size: 62.5%
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poor story', sans-serif, 'calibri';
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #080808;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./images/Portfolio\ extended.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container{
+  padding: 10px 15%;
+}
+
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 9rem;
+  margin-top:1rem;
+  cursor: pointer;
+}
+
+.nav-item{
+  display: inline-block;
+  list-style: none;
+  margin: 1rem 2rem;
+}
+
+.nav-item-link{
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nav-item-link:after{
+  content: '';
+  width: 0%;
+  height: .2rem;
+  background-color: #68e6c8;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  transition: .2s linear;
+}
+
+.nav-item-link:hover::after{
+  width: 100%;
+}
+
+.fixed-nav{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+  padding: 0 15%;
+  background-color: #080808;
+  box-shadow: 0px 5px 10px rgba(165, 160, 160, 0.1);
+  z-index: 20;
+}
+
+.header-text-container{
+  margin-top: 20%;
+  font-size: 3rem;
+}
+
+.header-text{
+  font-size: 6rem;
+}
+
+.role{
+  font-weight: 700;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.role::before{
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: 21%;
+  height: .2rem;
+  background:#68e6c8;
+}
+
+
+#about{
+  color: #dbdbe2; 
+  margin-top: 2rem;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+}
+
+.user-image{
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.subtitle{
+  color: #fff;
+  font-size: 6rem;
+}
+
+.subtitle-content{
+  font-size: 2.2rem;
+}
+
+.tabs-container{
+  margin: 2rem 0 2rem;
+}
+
+.tab{
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.tab::after{
+  content: '';
+  width: 20%;
+  height: .2rem;
+  background-color:#68e6c8;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  transition: 0.2s linear;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.tab-contents ul li span{
+  color: #68e6c8;
+  font-size: 2rem;
+}
+
+.tab-contents{
+  display: block;
+}
+
+.tab-contents i{
+  margin-right: 1rem;
+  color: #68e6c8;
+}
+
+#padding{
+  padding: 5rem 0;
+}
+
+.project{
+ border-radius: 1rem;
+ position: relative;
+ overflow: hidden;
+}
+
+.project-img{
+  width: 100%;
+  background-size: cover;
+  border-radius: 1rem;
+  display: block;
+  transition: transform .5s;
+}
+
+.project-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 4rem;
+  margin-top: 5rem;
+}
+
+.project:hover .project-img{
+  transform: scale(1.2);
+}
+
+.project-desc{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,.6), rgb(134, 91, 101,.5));
+  font-size:1.9rem;
+  position: absolute;
+  border-radius: 1rem;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 4rem;
+  text-align: center;
+  overflow: hidden;
+  transition: height .5s;
+}
+
+.project:hover .project-desc{
+  height: 105%;
+} 
+
+.project-desc h3{
+  font-weight:  500;
+  margin-bottom: 2rem;
+}
+
+.project-desc a{
+  margin-top: 2rem;
+  color: #68e6c8;
+  text-decoration: none; 
+  font-size: 2.2rem;
+  line-height: 6rem;
+  background: none;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.btn{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  width: fit-content;
+  margin: 5rem auto;
+  border: 1px solid #2a8a73;
+  padding: 1.4rem 5rem;
+  border-radius: .6rem;
+  transition: background .3s;
+}
+
+.btn:hover{
+  background:#2a8a73;
+}
+
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.contact-left p i {
+  color:#ababab;
+  margin-right: 1.5rem;
+  font-size: 2.5rem
+}
+
+.social-icons{
+  margin-top: 3rem;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 3rem;
+  margin-right: 1.5rem;
+  color:#ababab;
+  display: inline-block;
+  transition: all .5s;
+}
+
+.social-icons a:hover{
+  color: #2a8a73;
+  transform: translateY(-5px);
+}
+
+.btn.btn2{
+  display: inline-block;
+  background-color:#2a8a73;
+}
+
+.contact-right form{
+ width: 100%; 
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: #262626;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+
+form .btn2{
+  padding: 1.4rem 6rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.success-msg{
+  font-weight: 700;
+  font-size: 2rem;
+  display: none;
+}
+
+.success-msg.active{
+  display: block;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 0;
+  background-color: #262626;
+  font-weight: 300;
+}
+
+.nav .fa-solid{
+  display: none;
+}
+
+@media only screen and (max-width: 600px){
+  .container{
+    padding: 1rem 10%;
+  }
+  
+  #header{
+    background-image: url(./images/Portfolio\ extended-mobile.png);
+  }
+
+  .header-text-container{
+    margin-top: 100%;
+    font-size: 1.6rem;
+  }
+
+  .header-text{
+     font-size: 3rem;
+  }
+
+  .nav .fa-solid{
+    font-size: 2.5rem;
+    display: block;
+    cursor: pointer;
+  }
+
+  #nav ul{
+    background: #000 ;
+    position: fixed;
+    top: 0;
+    right: -15rem;
+    width: 15rem;
+    height: fit-content;
+    padding-top: 5rem;
+    border-radius: .8rem;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  #nav ul .nav-item{
+    display: block;
+    margin: 2.5rem;
+  }
+
+  #nav ul .fa-solid{
+    position: absolute;
+    top: 2.5rem;
+    left: 2.5rem;
+    cursor: pointer;
+  }
+
+  .fixed-nav{
+    padding: 0 10%;
+  }
+
+  .subtitle{
+    font-size: 4rem;
+  }
+
+  .about-col-1,
+  .about-col-2{
+    flex-basis: 100%;
+  }
+
+  .about-col-1{
+    margin-bottom: 3rem;
+  }
+
+  .about-col-2{
+    font-size: 1.4rem;
+  }
+
+  .tab{
+    font-size: 1.6rem;
+  }
+  
+  .contact-left,
+  .contact-right{
+    flex-basis: 100%;
+  }
+
+  #contact-icon{
+    font-size: 1.5rem;
+  }
+
+  .copyright{
+    font-size: 1.4rem;
+  }
+}
