@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap');
 
 /* Root adjustment on font size changes font-size
 to a (1rem = 10px) based system.  et body to 1.6rem*/
@@ -9,7 +9,7 @@ to a (1rem = 10px) based system.  et body to 1.6rem*/
 *{
   margin: 0;
   padding: 0;
-  font-family: 'poor story', sans-serif, 'calibri';
+  font-family: 'Bitter', sans-serif, 'calibri';
   box-sizing: border-box;
 }
 
@@ -89,12 +89,12 @@ body{
 }
 
 .header-text-container{
-  margin-top: 20%;
+  margin-top: 25%;
   font-size: 3rem;
 }
 
 .header-text{
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .role{
@@ -111,6 +111,10 @@ body{
   height: .2rem;
   background:#68e6c8;
 }
+
+/* .name-color-modifier{
+  color: linear-gradient(to right, #fff, #343232);
+} */
 
 
 #about{
@@ -143,7 +147,8 @@ body{
 }
 
 .subtitle-content{
-  font-size: 2.2rem;
+  font-size: 2rem;
+  line-height: 3.3rem;
 }
 
 .tabs-container{
@@ -369,7 +374,7 @@ form .btn2{
 
   .header-text-container{
     margin-top: 100%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .header-text{
