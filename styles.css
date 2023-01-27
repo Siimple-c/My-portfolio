@@ -112,11 +112,6 @@ body{
   background:#68e6c8;
 }
 
-/* .name-color-modifier{
-  color: linear-gradient(to right, #fff, #343232);
-} */
-
-
 #about{
   color: #dbdbe2; 
   margin-top: 2rem;
@@ -204,6 +199,7 @@ body{
 .project-img{
   width: 100%;
   background-size: cover;
+  object-fit: fill;
   border-radius: 1rem;
   display: block;
   transition: transform .5s;
