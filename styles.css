@@ -408,6 +408,23 @@ form .btn2{
     cursor: pointer;
   }
 
+  #overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+  }
+
+  #overlay.active{
+    opacity: 1;
+    pointer-events: all;
+  }
+
   .fixed-nav{
     padding: 0 10%;
   }

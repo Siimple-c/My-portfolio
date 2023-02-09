@@ -3,6 +3,7 @@ const tabContents = document.getElementsByClassName("tab-contents");
 const navItemContainer = document.getElementById('nav-item--container');
 const navSection = document.getElementById('nav');
 const scrollLinks = document.querySelectorAll('.scroll');
+const overlay = document.querySelector('#overlay');
 const contactForm = document.querySelector('form');
 contactName = contactForm.querySelector('#name');
 email = contactForm.querySelector('#email');
@@ -57,10 +58,12 @@ const openTab = (tabName) => {
 
 const openSidebar = () => {
   navItemContainer.style.right = "0";
+  overlay.classList.add('active');
 }
 
 const closeSidebar = () => {
   navItemContainer.style.right = "-15rem";
+  overlay.classList.remove('active');
 }
 
 /****Copyright-date****/
