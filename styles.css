@@ -393,6 +393,25 @@ form .btn2{
   display: none;
 }
 
+/*********************** TABLET SCREEN *************************/
+
+@media only screen and (max-width: 900px){
+
+  .header-text-container{
+    margin-top: 50%;
+    font-size: 1.8rem;
+    padding-left: 0;
+  }
+
+  #email-contact{
+    font-size: 1.5rem;
+  }
+
+  .contact-left > .subtitle {
+    font-size: 3.5rem
+  }
+}
+
 /*********************** MOBILE SCREEN *************************/
 
 @media only screen and (max-width: 600px){
@@ -509,20 +528,3 @@ form .btn2{
   }
 }
 
-/*********************** TABLET SCREEN *************************/
-
-@media only screen and (max-width: 900px){
-  .header-text-container{
-    margin-top: 50%;
-    font-size: 1.8rem;
-    padding-left: 0;
-  }
-
-  #email-contact{
-    font-size: 1.5rem;
-  }
-
-  .contact-left > .subtitle {
-    font-size: 3.5rem
-  }
-}
