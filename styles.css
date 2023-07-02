@@ -512,10 +512,6 @@ form .btn2{
 /*********************** TABLET SCREEN *************************/
 
 @media only screen and (max-width: 900px){
-  #header{
-    background-image: url(./images/Portfolio\ extended\ -tablet.png);
-  }
-
   .header-text-container{
     margin-top: 50%;
     font-size: 1.8rem;
